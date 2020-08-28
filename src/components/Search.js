@@ -9,7 +9,7 @@ import React from "react";
 
 // Search function to export into App.js
 // onChange is to have the table change as the searchbar 
-//onchange is called in app.js  - handleCahnge
+// onchange is called in app.js  - handleCahnge
 function Search({ onChange }) {
   return (
     <div>
@@ -19,6 +19,7 @@ function Search({ onChange }) {
           type="search"
           placeholder="Search"
           aria-label="Search"
+          // When the state changes, the page will automatically change
           onChange={onChange}
         />
       </form>
