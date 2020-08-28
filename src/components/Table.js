@@ -4,6 +4,7 @@ function Table({ employees }) {
     <table>
       <thead>
         <tr>
+          <th>Profile Photo</th>
           <th>Name</th>
           <th>Email</th>
           <th>DOB</th>
@@ -14,6 +15,9 @@ function Table({ employees }) {
       {/* goes through the employee database starting at index */}
         {employees.map((employee, i) => (
           <tr key={i + "-employee"}>
+            <td>
+              <img src={employee.picture.large} alt={employee.name.first}></img>
+            </td>
             <td>
               {employee.name.first} {employee.name.last}
             </td>
